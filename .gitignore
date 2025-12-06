@@ -1,0 +1,9 @@
+# Bỏ qua thư mục tạm của Visual Studio
+.vs/
+
+# Bỏ qua thư mục kết quả biên dịch (Rất quan trọng)
+bin/
+obj/
+
+# Bỏ qua các file cấu hình người dùng
+*.user
