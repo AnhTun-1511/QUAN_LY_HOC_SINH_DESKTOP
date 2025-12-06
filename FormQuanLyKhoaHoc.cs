@@ -104,15 +104,20 @@ namespace QuanLyHocSinh
             }
             try
             {
-                textBox_IdKhoaHoc.Text = DataGridView_KhoaHoc.CurrentRow.Cells["IDKHOAHOC"].Value.ToString();
-                textBox_TenKhoaHoc.Text = DataGridView_KhoaHoc.CurrentRow.Cells["TENKHOAHOC"].Value.ToString();
-                textBox_GioHoc.Text = DataGridView_KhoaHoc.CurrentRow.Cells["GIOHOC"].Value.ToString();
-                textBox_ThongTin.Text = DataGridView_KhoaHoc.CurrentRow.Cells["CHITIETKHOAHOC"].Value.ToString();
+                textBox_IdKhoaHoc.Text = DataGridView_KhoaHoc.CurrentRow.Cells["IdKhoaHoc"].Value.ToString();
+                textBox_TenKhoaHoc.Text = DataGridView_KhoaHoc.CurrentRow.Cells["TenKhoaHoc"].Value.ToString();
+                textBox_GioHoc.Text = DataGridView_KhoaHoc.CurrentRow.Cells["GioKhoaHoc"].Value.ToString();
+                textBox_ThongTin.Text = DataGridView_KhoaHoc.CurrentRow.Cells["ChiTietKhoaHoc"].Value.ToString();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Lỗi khi tải dữ liệu: " + ex.Message);
             }
+        }
+
+        private void DataGridView_KhoaHoc_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
